@@ -2,7 +2,7 @@
 simple weather app using external API
 
 # API 
-(openweathermap)[https://openweathermap.org/api]
+[openweathermap([https://openweathermap.org/api)
 
 ## Info
 showing informations about belows : 
