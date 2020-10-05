@@ -6,27 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrather App</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!--fontAwesome lib CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- animate js CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
-    <input type="text" name="city" id="city" class="city-name">
-    <button class="search">search</button>
-    <!-- the div where the location will be presented -->
-    <div class="location">
-        <h1 class="location-timezone">Timezone</h1>
-        <p>icon</p>
-    </div>
-
-    <!-- the div where the temperature will be presented -->
-    <div class="temperature">
-        <div class="degree-section">
-            <h2 class="temperature-degree">34</h2>
-            <span>F</span>
+    <div class="wrapper">
+        <div class="form__group">
+            <input type="text" class="animate__animated animate__bounceIn city-name" id="city" placeholder="City Name"
+                required="" />
         </div>
-        <div class="temperature-description">It's So hot</div>
+
+
+        <button class="animate__animated animate__fadeInRight animate__faster search">Search</button>
+        <!-- the div where the location will be presented -->
+
+        <!-- start spinner animations div  -->
+        <div class="spinner hide">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+
+        <!-- start location wrapper -->
+        <div class="location hide">
+            <h1 class="location-timezone">Timezone</h1>
+            <p>
+                <i class="fas fa-cloud fa-6x weather-icon"></i>
+            </p>
+
+        </div>
+
+        <div class="temperature-description"></div>
+        <!-- the div where the temperature will be presented -->
+        <div class="temperature-wrapper hide">
+            <div class="degree-section">
+                <h1 class="temperature-degree">--</h1>
+                <span>C</span>
+            </div>
+            <!--minimum degree section  -->
+            <div class="min-section others">
+                <h2>Min</h2>
+                <p>- -</p>
+            </div>
+
+            <!-- maximum temperature section -->
+            <div class="max-section others">
+                <h2>Max</h2>
+                <p>- -</p>
+            </div>
+
+            <!-- humidity section -->
+            <div class="humidity-section others">
+                <h2>Humidity</h2>
+                <p>- - %</p>
+            </div>
+
+        </div>
+
+
+        <button class="error-handler" onclick="window.location.reload();">Go Back</button>
+
     </div>
-
-
     <script src="app.js"></script>
 </body>
 
