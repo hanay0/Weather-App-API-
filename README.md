@@ -2,7 +2,7 @@
 simple weather app using external API
 
 # API 
-[openweathermap([https://openweathermap.org/api)
+[openweathermap]([https://openweathermap.org/api)
 
 ## Info
 showing informations about belows : 
@@ -17,4 +17,4 @@ showing informations about belows :
 ![weather app](https://user-images.githubusercontent.com/30327222/95067497-38414f80-0704-11eb-95c5-e610561167bb.png)
 
 ## Live
-(Live here)[https://hanay0.github.io/Weather-App-API-/]
+[Live here](https://hanay0.github.io/Weather-App-API-/)
